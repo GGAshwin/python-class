@@ -23,10 +23,14 @@ ladder={
 }
 
 def dice_throw():
-    dice=random.randint(1,6)
-    print('you got '+str(dice))
-    return dice
-
+    print('press E to roll dice, press something else to exit')
+    x=input().lower()
+    if x=='e':
+        dice=random.randint(1,6)
+        print('you got '+str(dice))
+        return dice
+    else:
+        sys.exit('Than you for playing')
 def win_conditon(player_pos,d):
     current=player_pos
     player_pos=player_pos+d
