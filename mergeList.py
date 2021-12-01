@@ -9,7 +9,7 @@ while i < int(l1):
     i+=1
 i=0
 while i<l2:
-    integer=int(input('Enter an integer:'))
+    integer=input('Enter an integer:')
     b.append([integer])
     i+=1
 print(a,b)
