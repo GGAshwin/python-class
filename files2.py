@@ -50,11 +50,23 @@ print(contents)
 print(read)'''
 
 
-count=0
+'''count=0
 name=input('Enter file name to read from:')
 file=open(name,'r')
 for i in file:
     print(i,end='')
     count+=1
 file.close()
-print(count)
+print(count)'''
+
+name=input('Enter file to open:')
+file=open(name,'a')
+content=input('Enter content:')
+while content!='stop':
+    file.write(content+'\n')
+    content=input()
+file.close()
+
+file=open(name,'r')
+print(file.read())
+file.close()

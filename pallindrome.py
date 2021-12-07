@@ -1,10 +1,7 @@
-str=input('Enter a str:')
-l=str.split()
-a=l.sort(reverse=True)
-print(a)
-str1=''.join(l)
-print(l)
-if str==str1:
-    print('pallindrome')
-else:
-    print('no')
+string=input('Enter a string:')
+x=list(string)
+print(x)
+list1=x.sort(reverse=True)
+list2=""
+list2.join(list1)
+print(list2==string)
