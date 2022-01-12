@@ -1,7 +1,11 @@
-string=input('Enter a string:')
-x=list(string)
-print(x)
-list1=x.sort(reverse=True)
-list2=""
-list2.join(list1)
-print(list2==string)
+n=int(input())
+temp=n
+rev=0
+while(n>0):
+    digit=n%10
+    rev=rev*10+digit
+    n=n//10
+if(temp==rev):
+    print("pallindrome")
+else:
+    print("not pallindrome")
