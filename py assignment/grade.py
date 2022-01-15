@@ -22,4 +22,23 @@ Enter score: 0.5
 F
 Run the program repeatedly to test the various different values for input
 '''
+def compute_grade(score):
+    try:
+        if(float(score)>0.9 and float(score)<=1.0):
+            return 'A'
+        elif(float(score)>0.8 and float(score)<=0.9):
+            return 'B'
+        elif(float(score)>0.7 and float(score)<=0.8):
+            return 'C'
+        elif(float(score)>0.6 and float(score)<=0.7):
+            return 'D'
+        elif(float(score)<=0.6 and float(score)>=0):
+            return'F'
+        else:
+            return'Bad Score'
+    except:
+        return'Bad Score'
 
+n=input("Enter the score:")
+grade=compute_grade(n)
+print(grade)
