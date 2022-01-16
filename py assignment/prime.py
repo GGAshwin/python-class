@@ -17,7 +17,7 @@ try:
         print('The endpoints are swapped')
 
     for i in range(s,e+1):
-        for j in range(s,i):
+        for j in range(2,i):
             if (i%j==0):
                 break
         else:
