@@ -1,14 +1,11 @@
-from json.tool import main
-
-
 testCases=int(input())
 mainList=[]
 for i in range(testCases):
-    for j in range(2):
-        N=int(input())
-        M=int(input())
+        n=input().split()
+        N=int(n[0])
+        M=int(n[1])
         for k in range(N):
             l=list()
             l.append(int(input()))
-        mainList.append(l)
+        mainList+=l
 print(mainList)
